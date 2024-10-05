@@ -8,12 +8,13 @@ const Cursors = () => {
   const ids = useOthersConnectionIds();
   return (
     <>
-      {ids.map((connectionId) => {
-        <Cursor key={connectionId} connectionId={connectionId} />;
-      })}
+      {ids.map((connectionId) => (
+        <Cursor key={connectionId} connectionId={connectionId} />
+      ))}
     </>
   );
 };
+
 export const CursorsPresence = memo(() => {
   return (
     <>
